@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./revision.css">
+    <title>Exam Revision Plan</title>
+</head>
+
+<body>
+
+    <h1>Exam Revision Plan</h1>
+
+    <div class="container">
+        <div id="form-container">
+            <label for="taskInput">What do I need to revise? </label>
+            <input type="text" id="taskInput" placeholder="Revision Task">
+    
+            <label for="timeInput">How much time is required for this task? </label>
+            <input type="text" id="timeInput" placeholder="Xh Ym format">
+    
+            <button onclick="addTask()" id="addButton">Add</button>
+        </div>
+    </div>
+
+    <div id="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Revision Task</th>
+                    <th>Time Required</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="todo-list"></tbody>
+        </table>
+    </div>
+
+    <div id="total-time">Total Time Required: <span id="total"></span></div>
+
+    <script src="./revision.js"></script>
+</body>
+</html>
