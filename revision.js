@@ -38,7 +38,7 @@ function deleteTask(button) {
 }
 
 function updateTotalTime() {
-    const totalSpan = document.getElementById('total');
+    const totalSpan = document.getElementById('total-time'); // Change 'total' to 'total-time'
     const hours = Math.floor(totalMinutes / 60);
     const minutes = totalMinutes % 60;
     totalSpan.textContent = `${hours}h ${minutes}m`;
